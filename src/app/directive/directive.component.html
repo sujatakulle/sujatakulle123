@@ -1,0 +1,18 @@
+<h3 style="color: rgb(112, 13, 112);">Directive </h3>
+
+<h3>1. Structural directive</h3>
+<h4>*ngIf</h4>
+<h5><p *ngIf="num>30||30">Number is greater than{{num}}</p></h5><hr>
+<h4>*ngFor</h4>
+<h5> select city:</h5><select><option *ngFor="let x of city">{{x}}</option></select><hr>
+<h4>*ngSwitch</h4>
+<div [ngSwitch]="numm">Today is:
+<div *ngSwitchCase="1">Monday</div>
+<div *ngSwitchCase="2">Tuesday</div>
+<div *ngSwitchCase="3">Saturday</div></div>
+<hr>
+<h3 [ngStyle]="{'color':'green', 'font-size': '30px'}">2. Attribute Directive:</h3>[ngStyle]="" / ngClass<hr>
+<h3>3. Component Directive</h3><br>
+<div appDirective1>
+<h3>4. Custom Directive: ng g d ...</h3>
+</div>

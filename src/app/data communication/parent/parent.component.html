@@ -1,0 +1,13 @@
+
+<div class="card">
+    <div class="card-header">
+    <p><b><h3>Parent Component</h3></b></p>
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>{{childdatavar}}</p>
+        <app-child [parentData]="dataFromParentToChild" (event)="childdata($event)"><b>Child Component</b></app-child><br><br>
+            <footer class="blockquote-footer">Simply call selector of child component into parent html file: to call child element :<cite title="Source Title">Child Component</cite></footer>
+        </blockquote>
+    </div>
+</div>

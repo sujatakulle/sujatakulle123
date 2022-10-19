@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-dark p-3 bg-danger" id="headerNav">
+  <div appDirective1 class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+      <ul appDirective1 class="navbar-nav mx-auto ">
+        <li class="nav-item">
+          <a class="nav-link mx-2 active" aria-current="page" routerLink="angular"><h3 appDirective1 >ANGULAR</h3></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link mx-2" routerLink="data-binding"><h4 appDirective1>Data-Binding</h4>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link mx-2" routerLink="directive"><h4>Directive</h4></a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link mx-2" routerLink="piping"><h4>Pipe</h4></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link mx-2" routerLink="template">
+            <h4>Template-form</h4>
+          </a>
+        </li> -->
+         <li class="nav-item">
+          <a class="nav-link mx-2" routerLink="service"><h4>Service</h4></a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link mx-2" routerLink="obs"><h4>Obs & Promises</h4></a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link mx-2" routerLink="parent">
+            <h4>Parent component</h4>
+          </a>
+        </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link mx-2" routerLink="first">
+              <h4>First Component</h4>
+            </a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" routerLink="second">
+                <h4>Second Component</h4>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link mx-2" routerLink="first">
+                <h4>First Component</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" routerLink="second">
+                <h4>Second Component</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" routerLink="html">
+                <h4>HTML</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <select (change)="onSelectUGmenu($event)">
+                <option  *ngFor="let i of html" value="{{i.path}}"> {{i.name}} </option>
+              </select>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" routerLink="javascript">
+                  <h4>JavaScript</h4>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" routerLink="sampletest">
+                  <h4>SampleTest</h4>
+                </a>
+              </li>
+            
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
